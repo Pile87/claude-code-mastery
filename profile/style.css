@@ -1,0 +1,27 @@
+/* 페이드인 애니메이션 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 탭바 활성 탭 */
+.tab-btn.tab-active {
+  color: #c8956c;
+}
+
+/* iPhone safe area */
+#tab-bar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 커스텀 스크롤바 */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #f7f3ee; }
+::-webkit-scrollbar-thumb { background: #e0d9d0; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #c8956c; }

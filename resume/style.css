@@ -1,0 +1,57 @@
+/* 페이드인 애니메이션 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 네비게이션 스크롤 그림자 */
+#navbar.scrolled {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* 스킬 배지 호버 */
+.skill-badge {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.skill-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+/* SNS 아이콘 호버 */
+.sns-link {
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+.sns-link:hover {
+  transform: translateY(-3px);
+}
+
+/* 커스텀 스크롤바 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* 섹션 구분선 */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+}
+.dark .section-divider {
+  background: linear-gradient(to right, transparent, #334155, transparent);
+}
